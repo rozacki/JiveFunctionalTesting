@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "*"
+requests = "*"
+pytest-docker = "*"
+impyla = "*"
+docker = "*"
+thrift = "*"
+thrift-sasl = "*"
+six = "*"
+bitarray = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

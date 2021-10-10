@@ -1,0 +1,6 @@
+sourceDB,sourceCollection,sourceFieldLocation,sourceDataType,destinationTable,destinationField,destinationDataType,function,meta
+test_data,arrays_of_arrays,array1[*].array2[*],string,arrays_of_arrays,array1_array2,string,,
+test_data,arrays_of_arrays,array1[*].a,string,arrays_of_arrays,array1_a,string,,
+test_data,arrays_of_arrays,array1[*].array3[*].a,string,arrays_of_arrays,array1_array3_a,string,,
+test_data,arrays_of_arrays,array1[*].array3[*].b,string,arrays_of_arrays,array1_array3_b,string,,
+test_data,arrays_of_arrays,array1[*].array4[*].array5[1],string,arrays_of_arrays,array1_array4_array4_index,int,,
