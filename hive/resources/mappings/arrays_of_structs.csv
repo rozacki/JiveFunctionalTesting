@@ -1,0 +1,5 @@
+sourceDB,sourceCollection,sourceFieldLocation,sourceDataType,destinationTable,destinationField,destinationDataType,function,dq
+test_data,arrays_of_structs,myArray[*]._id,string,arrays_of_structs,structure_id,string,,
+test_data,arrays_of_structs,myArray[*]._value,string,arrays_of_structs,structure_value,int,,
+test_data,arrays_of_structs,myArray[0]._id,string,arrays_of_structs,arrayElement0Id,string,,
+test_data,arrays_of_structs,parentId,string,arrays_of_structs,parentId,int,,

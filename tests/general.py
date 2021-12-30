@@ -1,6 +1,5 @@
-import pytest
 import os
-from hive.hive import execute_cmd, read_sql, split_sql_text, create_sql
+from hive import execute_cmd, read_sql, split_sql_text, create_sql
 
 
 def test_split_sql_text():
@@ -14,7 +13,7 @@ def test_split_sql_text():
 
 
 def test_split_sql_text_from_file():
-    sql_text = read_sql('resources/array_of_arrays.sql')
+    sql_text = read_sql('tests/resources/sql/arrays_of_arrays.sql')
     sqls = split_sql_text(sql_text)
 
     print(sqls)
@@ -22,14 +21,14 @@ def test_split_sql_text_from_file():
 
 
 def test_read_sql():
-    sql = read_sql('tmp/array_of_arrays.sql')
+    sql = read_sql('tests/resources/sql/arrays_of_arrays.sql')
     assert sql
 
 
 def test_generate_sql():
-    mapping = 'resources/mapping/array_of_arrays.csv'
+    mapping = 'tests/resources/mapping/arrays_of_arrays.csv'
     raw_hdfs_location = '/user/hive'
-    target_sql_path = 'tmp/test_generate_sql.sql'
+    target_sql_path = 'tests/tmp/test_generate_sql.sql'
     if not create_sql(mapping=mapping, raw_hdfs_location=raw_hdfs_location, target_sql_path=target_sql_path):
         assert False
 

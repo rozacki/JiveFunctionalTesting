@@ -19,17 +19,17 @@ Contains ``docker-compose.yml`` and ``hadoop-hive.env``
 #### tests_data folder
 This folder is mapped to hive-server.
 Will contain all test json data.
-Test data is copied to hdfs via ``hdfs dfs -put`` during tests startup.
+Test data is copied to hdfs via ``hdfs dfs -put`` during tests startup into hdfs folders
 
 ## HDFS
-Physical location of HDFS folders is in the local ``tests`` folder.
+HDFS folder uses physical location in the local ``tests`` folder.
 
 Each test has its own location. Raw JSON test data is copied to folder ``/user/hive/source/{test-name}/``.
 
 Where sourceDB,sourceCollection come from mapping files. Both will be aligned to 
 
-The database user is _hive_ user and _default_ database is the testing database, hence the folder where managed tables 
- will be stored is here:
+The database user is _hive_ user and _default_ database is the testing database, hence the folder where managed 
+(after first step) tables will be stored is here:
 ``
 /user/hive/warehouse/default/
 ``
@@ -48,3 +48,19 @@ Copy/overwrite test data from local folder mapped to  ``/tests_data/`` to hdfs `
 
 
 
+AbstractHiveTest - no needed
+ArraysOfArraysLateralViewDeclarationOrderTest - done
+ArraysOfArraysTest -done
+ArraysOfNestedStructsTest - done
+ArraysOfStructsTest -done
+ArraysTest - done
+ConversionsJIVETest
+DataCheckTest
+FunctionsTest - not implemented in jive
+LogicalDeleteArrayTest - not needed as no UC
+ManySourceSamePathToTargetTest
+ManySourcesToTarget
+ManySourcesToTargetTest
+MapsTest
+SystemFieldsJIVETest - not needed
+Utility

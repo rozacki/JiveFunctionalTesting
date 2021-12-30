@@ -1,0 +1,4 @@
+sourceDB,sourceCollection,sourceFieldLocation,sourceDataType,destinationTable,destinationField,destinationDataType,function
+test_data,arrays,a.array1[*],string,arrays,array3,string,
+test_data,arrays,a.array1[0],string,arrays,arrayElement0,string,
+test_data,arrays,a.array2[*],string,arrays,array1,string,

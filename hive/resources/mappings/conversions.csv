@@ -1,0 +1,7 @@
+sourceDB,sourceCollection,sourceFieldLocation,sourceDataType,destinationTable,destinationField,destinationDataType,function
+test_data,conversions,field1,string,conversions,string_column,string,
+test_data,conversions,field2,string,conversions,int_column,int,
+test_data,conversions,field3,date,conversions,date_column,date,
+test_data,conversions,field4,string,conversions,double_column,double,
+test_data,conversions,field5.d_date,string,conversions,time_column,timestamp,
+test_data,conversions,field6,STRING,conversions,bool_column,boolean,

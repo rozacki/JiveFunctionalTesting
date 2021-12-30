@@ -1,0 +1,6 @@
+sourceDB,sourceCollection,sourceFieldLocation,sourceDataType,destinationTable,destinationField,destinationDataType,function
+test_data,array_of_nested_structs,parentId,string,array_of_nested_structs,parentId,int,
+test_data,array_of_nested_structs,myArray[*]._id1._id2._id3,string,array_of_nested_structs,structure_id1,string,
+test_data,array_of_nested_structs,myArray[*]._id1._id2._value,string,array_of_nested_structs,structure_value1,int,
+test_data,array_of_nested_structs,myArray[*]._id1._id4._id5,string,array_of_nested_structs,structure_id2,string,
+test_data,array_of_nested_structs,myArray[*]._id1._id4._value,string,array_of_nested_structs,structure_value2,int,
